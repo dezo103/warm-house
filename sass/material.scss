@@ -1,0 +1,40 @@
+#material .wrapper {
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+#material .subwrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.m-container {
+  display: flex;
+  gap: 14px;
+}
+
+.m-card {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: $_576) {
+    width: 330px;
+  }
+}
+
+.m-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+  background: $color-light-grey;
+}
+
+.m-card .button {
+  width: 100%;
+}
+
+.m-card .s-400-16 {
+  flex-grow: 1;
+}
+
+

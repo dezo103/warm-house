@@ -1,0 +1,85 @@
+#mobile-table {
+  display: none;
+  @media (max-width: $_1024) {
+    display: block;
+    margin-top: 100px;
+  }
+}
+
+#mobile-table .table-grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: repeat(5, 247px 80px 80px 80px);
+  gap: 2px; /* Отступы между элементами */
+  @media (max-width: $_768) {
+    grid-template-columns: 164px 1fr;
+  }
+  @media (max-width: $_576) {
+    grid-template-columns: 110px 1fr;
+    grid-template-rows: repeat(5, 247px 85px 85px 85px);
+  }
+}
+
+#mobile-table.item {
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#mobile-table .item-header {
+  color: #fff;
+  background: $color-accent-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @media (max-width: $_576) {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+}
+
+#mobile-table .item-light {
+  background: $color-light-grey;
+  padding: 16px;
+}
+
+#mobile-table .item-hard {
+  background: $color-accent-grey;
+  padding: 20px;
+}
+
+#mobile-table .text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobile-table .cell-text {
+  margin-top: 0;
+}
+
+#mobile-table .img-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 416px;
+  height: 162px;
+  @media (max-width: $_768) {
+    width: 199px;
+    height: 153px;
+  }
+}
+
+#mobile-table .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#mobile-table .item-light {
+  @media (max-width: $_576) {
+    font-size: 1.4rem;
+    padding: 6px;
+    line-height: 1.7rem;
+  }
+}
+

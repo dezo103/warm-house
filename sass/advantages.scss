@@ -1,0 +1,119 @@
+#advantages {
+  background: $color-accent-grey;
+  margin-top: -100px;
+  @media (max-width: $_768) {
+    margin-top: 60px;
+  }
+}
+
+#advantages .wrapper {
+  width: 100%;
+  padding: 30px 0;
+}
+
+#container-advantages {
+  display: grid;
+  gap: 12px;
+  grid-template-areas: 'a1 a2 a3'
+                        'a4 a5 a6'
+                        'a7 a8 a9';
+  @media (max-width: 1023px) {
+    grid-template-areas: 'a1' 'a2' 'a3'
+                        'a4' 'a5' 'a6'
+                        'a7' 'a8' 'a9';
+    gap: 0;
+  }
+}
+
+.adv-1 {
+  grid-area: a1;
+}
+.adv-2 {
+  grid-area: a2;
+}
+.adv-3 {
+  grid-area: a3;
+}
+.adv-4 {
+  grid-area: a4;
+}
+.adv-5 {
+  grid-area: a5;
+}
+.adv-6 {
+  grid-area: a6;
+}
+.adv-7 {
+  grid-area: a7;
+}
+.adv-8 {
+  grid-area: a8;
+}
+.adv-9 {
+  grid-area: a9;
+}
+//#container-advantages {
+//  overflow: hidden;
+
+
+.a-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  width: 80px;
+  height: 95px;
+  background: $color-accent-black;
+}
+
+.item-advantages {
+  width: 100%;
+  display: flex;
+  //justify-content: space-between;
+  transition: height 0.5s ease; /* плавный переход высоты */
+  overflow: hidden; /* скрытие содержимого во время анимации */
+  height: auto; /* автоматическая высота по умолчанию для видимых элементов */
+  background: $color-accent-white;
+  @media (max-width: 1023px) {
+    margin-top: 12px;
+  }
+}
+
+.a-text-wrapper {
+  padding-left: 12px;
+  & .a-800-20 {
+    margin: 5px 0 0 0;
+    @media (max-width: $_576) {
+      font-size: 1.8rem;
+    }
+  }
+  & .a-400-16 {
+    margin: 0;
+    font-size: 1.6rem;
+    @media (max-width: $_576) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.item-advantages.hidden {
+  display: none;
+}
+
+/* Не забудьте про стили для кнопки, если это необходимо */
+#showMore {
+  /* Стили для кнопки "Подробнее"/"Свернуть" */
+  cursor: pointer;
+  /* Добавьте сюда любые другие стили, которые считаете нужными */
+}
+
+#showMore {
+  display: none;
+  @media (max-width: 1023px) {
+  display: block;
+    text-align: center;
+    margin-top: 30px;
+
+  }
+}
+

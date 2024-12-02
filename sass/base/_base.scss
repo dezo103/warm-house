@@ -1,0 +1,231 @@
+@import "../abstract/_mixins";
+
+@font-face {
+  font-family: "AlmaraiRegular";
+  src: url("/fonts/Almarai-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlmaraiBold";
+  src: url("/fonts/Almarai-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarala";
+  src: url("/fonts/Sarala-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  color: $color-full-black;
+}
+
+.wrapper {
+  max-width: 1430px;
+  margin: 0 15px 0 15px;
+  //padding: 0 20px;
+}
+main {
+  padding-top:100px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Sarala", Verdana, sans-serif;
+  font-size: 9.6rem;
+  margin: 0;
+  @media (max-width: $_576) {
+    font-size: 6.4rem;
+  }
+}
+
+h2 {
+  font-family: "Sarala", Verdana, sans-serif;
+  font-size: 4.8rem;
+  @media (max-width: $_576) {
+    font-size: 3.2rem;
+  }
+  @media (max-width: $_360) {
+    font-size: 2.4rem;
+  }
+}
+
+h3 {
+  font-family: "Sarala", Verdana, sans-serif;
+  font-size: 3.6rem;
+  margin: 0;
+  @media (max-width: $_576) {
+    font-size: 3.2rem;
+  }
+  @media (max-width: $_360) {
+    font-size: 2.8rem;
+  }
+}
+
+h4 {
+  font-family: "Sarala", Verdana, sans-serif;
+  font-size: 3.2rem;
+  @media (max-width: $_576) {
+    font-size: 2.4rem;
+  }
+  @media (max-width: $_360) {
+    font-size: 2.0rem;
+  }
+}
+
+.insideContainer {
+  max-width: 1430px;
+  margin: 0 auto;
+  @media (max-width: $_768) {
+    max-width: 708px;
+  }
+  @media (max-width: $_576) {
+    max-width: 546px;
+  }
+  @media (max-width: $_360) {
+    max-width: 330px;
+  }
+}
+
+.button {
+  font-family: "AlmaraiRegular", Verdana, sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px ;
+  color: $color-accent-white;
+  background: $color-accent-black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 78px;
+  &:hover,
+  &:active{
+    transition: all 0.3s ease;
+      background-color: gray;
+    border: none;
+
+    }
+
+}
+
+.buttonAlt {
+  font-family: "AlmaraiRegular", Verdana, sans-serif;
+  font-size: 1.6rem;
+  color: $color-accent-black;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 78px;
+  border: 1px solid $color-accent-black;
+  &:hover,
+  &:active {
+    transition: all 0.3s ease;
+    color: $color-accent-black;
+    border: 1px solid $color-accent-black;
+  }
+}
+
+.s-400-20 {
+  font-family: "Sarala", Verdana, sans-serif;
+  font-size: 2.0rem;
+}
+
+.s-400-18 {
+  font-family: "Sarala", Verdana, sans-serif;
+  font-size: 1.8rem;
+}
+
+.s-400-16 {
+  font-family: "Sarala", Verdana, sans-serif;
+  font-size: 1.6rem;
+}
+
+.a-400-16 {
+  font-family: "AlmaraiRegular", Verdana, sans-serif;
+  font-size: 1.6rem;
+}
+
+.a-400-17 {
+  font-family: "AlmaraiRegular", Verdana, sans-serif;
+  font-size: 1.7rem;
+}
+
+.a-400-18 {
+  font-family: "AlmaraiRegular", Verdana, sans-serif;
+  font-size: 1.8rem;
+}
+
+.a-800-20 {
+  font-family: "AlmaraiBold", Verdana, sans-serif;
+  font-size: 2.0rem;
+}
+
+.overflow {
+  overflow: auto;
+}
+
+//.button {
+//  width: 252px;
+//  height: 54px;
+//  background-color: transparent;
+//  border: 3px solid $color-primary-2;
+//  font-weight: 600;
+//  transition: all 0.1s;
+//  &:hover {
+//    background-color: $color-primary-2;
+//  }
+//  &:active {
+//    background-color: $color-active;
+//    border: 3px solid $color-active;
+//  }
+//  &:focus {
+//    outline: 0;
+//  }
+//  @media (max-width: 575px) {
+//    width: 210px;
+//    height: 45px;
+//    border-width: 2px;
+//  }
+//
+//}
+//
+//.flex {
+//  display: flex !important;
+//  transition: 1s;
+//}
+//
+//.hidden {
+//  overflow: hidden;
+//}
+//
+//.visible {
+//  opacity: 1 !important;
+//  transition: 0.7s;
+//}
+
+
+
+

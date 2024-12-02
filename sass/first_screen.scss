@@ -1,0 +1,55 @@
+.first-screen .wrapper{
+  width: 100%;
+  min-height: 725px;
+  background: url("/img/bg/main.webp") center center no-repeat;
+  @media (max-width: $_768) {
+    background: url("/img/bg/main768.webp") center bottom no-repeat;
+    min-height: 653px;
+  }
+  @media (max-width: $_576) {
+    background: url("/img/bg/main576.webp") center bottom no-repeat;
+    min-height: 518px;
+  }
+  @media (max-width: $_360) {
+    background: url("/img/bg/main360.webp") center bottom no-repeat;
+  }
+}
+
+//.first-screen h1 {
+//  display: inline;
+//}
+
+.substrate {
+  background: $color-accent-white;
+  width: 650px;
+  @media (max-width: $_768) {
+    width: auto;
+    max-width: 576px;
+  }
+
+  & button {
+    transform: translateY(36px);
+    width: 476px;
+    height: 78px;
+    @media (max-width: $_576) {
+      width: 292px;
+    }
+    @media (max-width: $_360) {
+      height: 62px;
+      width: 292px;
+      transform: translateY(15px);
+    }
+  }
+}
+
+.substrate-second {
+  position: absolute;
+  width: 436px;
+  height: 360px;
+  right: 0;
+  background: $color-accent-grey;
+  z-index: -1;
+  @media (max-width: $_576) {
+    display: none;
+  }
+}

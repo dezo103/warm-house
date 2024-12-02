@@ -1,0 +1,47 @@
+#table {
+  margin-top: 100px;
+  @media (max-width: $_1024) {
+    display: none;
+  }
+}
+
+#table .table-grid-container {
+  display: grid;
+  grid-template-columns: 458px 195px 195px 1fr;
+  grid-template-rows: 86px repeat(5, 1fr);
+  gap: 10px; /* Отступы между элементами */
+}
+
+#table.item {
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#table .item-header {
+  color: #fff;
+  background: $color-accent-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#table .item-light {
+  background: $color-light-grey;
+  padding: 16px;
+}
+
+#table .item-hard {
+  background: $color-accent-grey;
+  padding: 20px;
+}
+
+#table .text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table .cell-text {
+  margin-top: 0;
+}

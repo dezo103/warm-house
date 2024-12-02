@@ -1,0 +1,41 @@
+#enum {
+  margin-top: 100px;
+  @media (max-width: $_768) {
+    margin-top: 60px;
+  }
+}
+
+#enum .wrapper {
+  overflow: hidden;
+}
+
+#enum .subwrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.e-container {
+  display: flex;
+  gap: 14px;
+}
+
+.e-card {
+  width: 346px;
+  min-width: 346px;
+  //height: 272px;
+  background-color: $color-light-grey;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  @media (max-width: $_576) {
+    min-width: 330px;
+  }
+}
+
+.e-header {
+  display: flex;
+  justify-content: space-between;
+}
+//.e-body {
+//  padding: 14px;
+//}
